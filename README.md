@@ -11,9 +11,7 @@ gem install letov
 ```
 require 'letov'
 
-letov = Letov.new
-
-puts letov.say
+puts Letov.say
    ```
 
 3. ????????

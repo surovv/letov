@@ -1,26 +1,11 @@
 require 'json'
 
-class Letov 
-  @@lyrics = nil
-  
-  def initialize
-    @@lyrics = JSON.parse(open_file())
-  end
+module Letov
+  LYRICS = JSON.parse(IO.read(File.join( File.dirname(__FILE__), 'output.json')))
 
-  def say
-    begin
-      @song = rand(0..@@lyrics.size)
-	    @string = rand(0..@@lyrics[@song]['lyrics'].size)
-	    @choose = @@lyrics[@song]['lyrics'][@string]
-	    return @choose == nil ? self.say() : @choose
-    rescue NoMethodError
-      self.say()
-    end
+  def self.say
+    song = rand(LYRICS.size)
+    string = rand(LYRICS[song]['lyrics'].size)
+    LYRICS[song]['lyrics'][string]
   end
-
-  private
-  def open_file
-    return File.read(File.join( File.dirname(__FILE__), 'output.json' ))
-  end
-
 end
