@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/letov.svg)](https://badge.fury.io/rb/letov)
+
 How to use:
 
 1. Install 
