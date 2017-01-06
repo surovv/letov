@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/letov.svg)](https://badge.fury.io/rb/letov)
+[![Gem Version](https://badge.fury.io/rb/letov.svg)](https://badge.fury.io/rb/letov) [![Code Climate](https://codeclimate.com/github/fffuture/letov/badges/gpa.svg)](https://codeclimate.com/github/fffuture/letov)
 
 How to use:
 
